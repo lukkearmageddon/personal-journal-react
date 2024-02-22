@@ -29,7 +29,7 @@ function App() {
 			text: item.text,
 			title: item.title,
 			date: new Date(item.date),
-			id: Math.max(...prev.map(i => i.id)) + 1
+			id: prev.length > 0 ?  Math.max(...prev.map(i => i.id)) + 1 : 1
 		}]);
 	};
 
