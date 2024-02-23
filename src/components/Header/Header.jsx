@@ -1,7 +1,7 @@
-import './Header.css';
+import styles from './Header.module.css';
 
 export default function Header() {
 	return (
-		<img width={180} src="/src/assets/logo.svg" alt="personal journal logotype" />
+		<img className={styles.logo} width={180} src="/src/assets/logo.svg" alt="personal journal logotype" />
 	);
 }
